@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Categories | Too young, too simple.</title>
+  <title>array, stack | Too young, too simple.</title>
   <meta name="author" content="kingdaa">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="Categories"/>
+  
   <meta property="og:site_name" content="Too young, too simple."/>
 
   
@@ -93,67 +93,43 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 
   <div class="container">
   	<div class="content">
-    	 <!-- title -->
+    	 
+
+<!-- title -->
 <div class="page-header">
-	 <h1><i class="fa fa-folder"></i> Categories</h1>
+  <h1 class="archive-title-tag">array, stack</h1>
 </div>
 
-<div class="row page"> 
-
+<div class="row page">
+  <!-- cols -->
+  
+  <div class="col-md-9">
 	
-	<div class="col-md-9">
-	
 
-
-	<div class="widget">
-		<ul class="tag_box inline list-unstyled">
+	  <div class="archive">
+				
 		
-			<li><a href="#Others">Others<span>1</span></a></li>
 		
-			<li><a href="#leetcode, english">leetcode, english<span>1</span></a></li>
+			
+			
+			<h4 class="archive-ul" data-toggle="collapse" data-target="#2015">2015<b class="caret"></b></h4>
+			<ul id="2015" class="collapse in">
+			
+		
+		<li class="listing-item">
+		<span class="date_class"> 2015-03-30 </span> &raquo;
+		
+		<span class="title"><a href="/2015/03/30/Largest-Rectangle-in-Histogram/" >Largest Rectangle in Histogram</a></span>
+		
+		</li>			
 		
 		</ul>
-	</div>
+		</div>
 
-<div class="archive">
-	
-
-	   <h4 class="archive-ul show" data-toggle="collapse" id="Others" data-target="#modal-Others"> Others <b class="caret"></b></h4>
-	   <ul id="modal-Others" class="collapse in">
-
-	   
-		   
-	   
-		   
-	   	   	 <li class="listing-item"><a href="/2015/03/27/hello-world/"  title="Hello world post" >Hello World</a></li>
-		  
-	   
-	   
-	   </ul>
-	
-
-	   <h4 class="archive-ul show" data-toggle="collapse" id="leetcode, english" data-target="#modal-leetcode, english"> leetcode, english <b class="caret"></b></h4>
-	   <ul id="modal-leetcode, english" class="collapse in">
-
-	   
-		   
-	   	   	 <li class="listing-item"><a href="/2015/03/30/Largest-Rectangle-in-Histogram/" >Largest Rectangle in Histogram</a></li>
-		  
-	   
-		   
-	   
-	   
-	   </ul>
-	
-	</ul>
-</div>
+</div> <!-- col-md-9/col-md-12 -->
 
 
-
-</div> <!-- col-md-9 -->
-
-   
-	   <div class="col-md-3">
+<div class="col-md-3">
 	<div id="sidebar">
 	
 			<div class="form-group has-success has-feedback">
@@ -222,9 +198,10 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 	</div> <!-- sidebar -->
 </div> <!-- col-md-3 -->
 
-   
 
-</div> <!-- row-fluid -->
+
+
+
 	</div>
   </div>
   <div class="container-narrow">
@@ -251,7 +228,7 @@ var disqus_shortname = 'kingdaa';
   var dsq = document.createElement('script');
   dsq.type = 'text/javascript';
   dsq.async = true;
-  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 }());
 </script>
