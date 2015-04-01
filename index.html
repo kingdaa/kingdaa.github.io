@@ -117,7 +117,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 	<!-- display as entry -->	
 		<h3 class="title">
 			<div class="date"> 2015-03-31 </div>
-			<div class="article-title"><a href="/2015/03/31/MathTest/" >MathTest</a></div>						
+			<div class="article-title"><a href="/2015/03/31/MathTest/" title="Install Mathjax plugin in Hexo">Mathjax Plugin in Hexo</a></div>						
 		</h3>
 	
 
@@ -128,8 +128,17 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 	<div class="col-md-12">
 	  
 	
-	  <h1 id="Test_of_Mathjax_plugin">Test of Mathjax plugin</h1><p>Simple inline $a = b + c$.</p>
-<p>This is an example for $x_mu$ and $y_mu$.</p>
+	  <h2 id="References">References</h2><p><a href="http://catx.me/2014/03/09/hexo-mathjax-plugin/&quot;" target="_blank" rel="external">Hexo MathJax插件</a><br><a href="http://ljshou.gitcafe.io/2014/10/26/%E4%BD%BF%E7%94%A8-Mathjax-%E5%9C%A8-hexo-%E4%B8%AD%E8%BE%93%E5%85%A5%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F" target="_blank" rel="external">使用 Mathjax 在 hexo 中输入数学公式</a></p>
+<h2 id="Install">Install</h2><h3 id="安装">安装</h3><figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-<span class="built_in">math</span> <span class="comment">--save</span></span><br></pre></td></tr></table></figure>
+<h3 id="初始化">初始化</h3><p>在blog文件夹中执行：<br><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo math <span class="keyword">install</span></span><br></pre></td></tr></table></figure></p>
+<p>在_config.yml文件中添加：<br><figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="label">plugins:</span></span><br><span class="line">	- hexo-math</span><br></pre></td></tr></table></figure></p>
+<h2 id="测试">测试</h2><pre><code>Simple inline <span class="variable">$a</span> = <span class="tag">b</span> + c$.
+</code></pre><p>Simple inline $a = b + c$.</p>
+<pre><code><span class="constant">This</span> is an example <span class="keyword">for</span> <span class="variable">$x</span>\_mu<span class="variable">$ </span><span class="keyword">and</span> <span class="variable">$y</span>\_mu<span class="variable">$.</span>
+</code></pre><p>This is an example for $x_mu$ and $y_mu$.</p>
+<p><strong>Notice that ‘\’ needs to be put before ‘_’ in markdown for hexo.</strong></p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="formula">$$<span class="command">\frac</span><span class="special">&#123;</span><span class="command">\partial</span> u<span class="special">&#125;</span><span class="special">&#123;</span><span class="command">\partial</span> t<span class="special">&#125;</span></span><br><span class="line">= h^2 <span class="command">\left</span>( <span class="command">\frac</span><span class="special">&#123;</span><span class="command">\partial</span>^2 u<span class="special">&#125;</span><span class="special">&#123;</span><span class="command">\partial</span> x^2<span class="special">&#125;</span> +</span><br><span class="line"><span class="command">\frac</span><span class="special">&#123;</span><span class="command">\partial</span>^2 u<span class="special">&#125;</span><span class="special">&#123;</span><span class="command">\partial</span> y^2<span class="special">&#125;</span> +</span><br><span class="line"><span class="command">\frac</span><span class="special">&#123;</span><span class="command">\partial</span>^2 u<span class="special">&#125;</span><span class="special">&#123;</span><span class="command">\partial</span> z^2<span class="special">&#125;</span><span class="command">\right</span>)$$</span></span><br></pre></td></tr></table></figure>
+<p>$$\frac{\partial u}{\partial t}<br>= h^2 \left( \frac{\partial^2 u}{\partial x^2} +<br>\frac{\partial^2 u}{\partial y^2} +<br>\frac{\partial^2 u}{\partial z^2}\right)$$</p>
 
 	
 	</div>
@@ -250,7 +259,9 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 		
 			<li><a href="/categories/Others/">Others<span>1</span></a></li>
 		
-			<li><a href="/categories/english/">english<span>1</span></a></li>
+			<li><a href="/categories/chinese/">chinese<span>1</span></a></li>
+		
+			<li><a href="/categories/english/">english<span>0</span></a></li>
 		
 			<li><a href="/categories/leetcode/english/">english<span>1</span></a></li>
 		
@@ -267,9 +278,9 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 		
 			<li><a href="/tags/test/">test<span>1</span></a></li>
 		
-			<li><a href="/tags/array/">array<span>1</span></a></li>
-		
 			<li><a href="/tags/stack/">stack<span>1</span></a></li>
+		
+			<li><a href="/tags/array/">array<span>1</span></a></li>
 		
 		 
 		</ul>
@@ -283,7 +294,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
   <ul class="entry list-unstyled">
     
       <li>
-        <a href="/2015/03/31/MathTest/" ><i class="fa fa-file-o"></i>MathTest...</a>
+        <a href="/2015/03/31/MathTest/"  title="Install Mathjax plugin in Hexo" ><i class="fa fa-file-o"></i>Mathjax Plugin in Hexo...</a>
       </li>
     
       <li>
